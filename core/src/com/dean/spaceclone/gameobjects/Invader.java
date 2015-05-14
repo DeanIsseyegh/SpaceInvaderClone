@@ -5,7 +5,6 @@ import com.badlogic.gdx.graphics.g2d.Sprite;
 
 public class Invader extends Sprite {
 
-	private Texture spriteTexture;
 	private float movementPerTick = 5;
 	private boolean didJustMoveDown = false;
 
@@ -13,10 +12,6 @@ public class Invader extends Sprite {
 		super(spriteTexture);
 		setX(x);
 		setY(y);
-	}
-
-	public Texture getSpriteTexture() {
-		return spriteTexture;
 	}
 	
 	public void increaseSpeed() {
@@ -43,5 +38,9 @@ public class Invader extends Sprite {
 
 	public void setDidJustMoveDown(boolean didJustMoveDown) {
 		this.didJustMoveDown = didJustMoveDown;
+	}
+	
+	public float getMovementPerTick() {
+		return movementPerTick;
 	}
 }

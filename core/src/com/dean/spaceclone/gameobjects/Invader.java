@@ -43,4 +43,8 @@ public class Invader extends Sprite {
 	public float getMovementPerTick() {
 		return movementPerTick;
 	}
+
+	public void setMovementPerTick(float movementPerTick) {
+		this.movementPerTick = movementPerTick;
+	}
 }

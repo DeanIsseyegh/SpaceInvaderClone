@@ -13,9 +13,10 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
 import com.badlogic.gdx.graphics.Texture;
+import com.dean.spaceclone.gameobjects.Bullet;
 import com.dean.spaceclone.gameobjects.Defender;
 
-public class DefenderBehaviourTest {
+public class DefenderTest {
 
 	private Defender defender;
 	
@@ -51,12 +52,7 @@ public class DefenderBehaviourTest {
 	
 	@Test
 	public void shouldCreateBulletWhenShooting() {
-		defender.shoot(mockedTexture, 1);
-		assertThat(defender.getBullet(), is(not(nullValue())));
-	}
-	
-	@Test
-	public void shouldNotHaveBulletWhenHasNotShot() {
-		assertThat(defender.getBullet(), is(nullValue()));
+		Bullet bullet = defender.shoot(mockedTexture, 1);
+		assertThat(bullet, is(not(nullValue())));
 	}
 }

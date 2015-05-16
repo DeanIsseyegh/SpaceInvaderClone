@@ -13,7 +13,7 @@ import org.mockito.MockitoAnnotations;
 import com.badlogic.gdx.graphics.Texture;
 import com.dean.spaceclone.gameobjects.Invader;
 
-public class InvaderBehaviourTest {
+public class InvaderTest {
 
 	private Invader invader;
 	

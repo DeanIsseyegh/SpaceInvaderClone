@@ -21,6 +21,8 @@ public class Bullet extends Sprite {
 	}
 	
 	/**
+	 * The updated method should get called once per render.
+	 * 
 	 * Note that bullets can only travel vertically, so there is no need to update and change
 	 * its X axis.
 	 */

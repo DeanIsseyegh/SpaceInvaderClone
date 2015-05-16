@@ -8,7 +8,7 @@ public class Invader extends Sprite {
 	private float movementPerTick = 5;
 	private boolean didJustMoveDown = false;
 
-	public Invader(Texture spriteTexture, int x, int y) {
+	public Invader(Texture spriteTexture, float x, float y) {
 		super(spriteTexture);
 		setX(x);
 		setY(y);

@@ -1,26 +1,26 @@
 package com.dean.spaceclone.gameobjects.test;
 
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.is;
+import static org.hamcrest.Matchers.lessThan;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import static org.hamcrest.Matchers.*;
-import static org.hamcrest.MatcherAssert.assertThat;
-
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.utils.Array;
-import com.dean.spaceclone.CollisionHandler;
-import com.dean.spaceclone.ICollisionHandler;
-import com.dean.spaceclone.gameobjects.Bullet;
-import com.dean.spaceclone.gameobjects.Invader;
+import com.dean.spaceclone.handlers.CollisionHandler;
+import com.dean.spaceclone.handlers.ICollisionHandler;
 
 public class CollisionHandlerTest {
 
 	ICollisionHandler collisionHandler;
 	
 	@Mock Texture mockedTexture;
+	final public static int TEXTURE_HEIGHT_WIDTH = 5;
 	
 	@Before
 	public void setupTests() {
@@ -33,20 +33,40 @@ public class CollisionHandlerTest {
 		float overlappedXCoordinates = 923;
 		float overlappedYCoordinates = 738;
 		
-		Bullet bullet = new Bullet(mockedTexture, overlappedXCoordinates, overlappedYCoordinates, 1);
-		Array<Sprite> invaders = new Array<>();
+		Sprite sprite = new Sprite(mockedTexture);
+		sprite.setBounds(overlappedXCoordinates, overlappedYCoordinates, TEXTURE_HEIGHT_WIDTH, TEXTURE_HEIGHT_WIDTH);
+		Array<Sprite> spriteArray = new Array<>();
 		int x = 0;
 		int y = 0;
 		// Populate the list with a bunch of invaders so that the test includes a large number of variables
 		for (int i = 0; i < 54; i++) {
-			Invader invader = new Invader(mockedTexture, ++x, ++y);
-			invaders.add(invader);
+			Sprite spriteX = new Sprite(mockedTexture);
+			spriteX.setBounds(++x, ++y, TEXTURE_HEIGHT_WIDTH, TEXTURE_HEIGHT_WIDTH);
+			spriteArray.add(spriteX);
 		}
-		Invader overlappedInvader = new Invader(mockedTexture, overlappedXCoordinates, overlappedYCoordinates);
-		invaders.add(overlappedInvader);
+		Sprite overlappedSprite = new Sprite(mockedTexture);
+		overlappedSprite.setBounds(overlappedXCoordinates, overlappedYCoordinates, TEXTURE_HEIGHT_WIDTH, TEXTURE_HEIGHT_WIDTH);
+		spriteArray.add(overlappedSprite);
 		
-		int indexOfOverlappedInvader = collisionHandler.indexOfSpriteThatCollided(invaders, bullet);
-		assertThat(invaders.get(indexOfOverlappedInvader), is(overlappedInvader));
+		int indexOfOverlappedSprite = collisionHandler.indexOfSpriteThatCollided(spriteArray, sprite);
+		assertThat(spriteArray.get(indexOfOverlappedSprite), is(overlappedSprite));
 	}
 	
+	@Test
+	public void shouldCorrectlyDetectSpritesDidntOverlap() {
+		Sprite sprite = new Sprite(mockedTexture);
+		// Set sprite to coordinates -100, -100 so it won't overlap with anything
+		sprite.setBounds(-100, -100, TEXTURE_HEIGHT_WIDTH, TEXTURE_HEIGHT_WIDTH);
+		Array<Sprite> spriteArray = new Array<>();
+		int x = 0;
+		int y = 0;
+		// Populate the list with a bunch of invaders so that the test includes a large number of variables
+		for (int i = 0; i < 54; i++) {
+			Sprite spriteX = new Sprite(mockedTexture);
+			spriteX.setBounds(++x, ++y, TEXTURE_HEIGHT_WIDTH, TEXTURE_HEIGHT_WIDTH);
+			spriteArray.add(spriteX);
+		}
+		int indexOfOverlappedSprite = collisionHandler.indexOfSpriteThatCollided(spriteArray, sprite);
+		assertThat(indexOfOverlappedSprite, is(lessThan(0)));
+	}
 }

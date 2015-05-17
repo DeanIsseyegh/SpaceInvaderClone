@@ -25,7 +25,7 @@ public class DefenderTest {
 	@Before
 	public void setupTests() {
 		MockitoAnnotations.initMocks(this);
-		defender = new Defender(mockedTexture, 1, 1);
+		defender = new Defender(mockedTexture, 1, 1, 1);
 	}
 	
 	@Test

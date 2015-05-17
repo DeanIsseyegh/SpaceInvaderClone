@@ -1,4 +1,4 @@
-package com.dean.spaceclone;
+package com.dean.spaceclone.handlers;
 
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.utils.Array;
@@ -13,6 +13,6 @@ public interface ICollisionHandler {
 	 * @param sprite
 	 * @return int - Index of sprite in Array that has overlapped. Returns -1 if there is no overlap.
 	 */
-	int indexOfSpriteThatCollided(Array<Sprite> sprites, Sprite sprite);
-	
+	int indexOfSpriteThatCollided(Array<? extends Sprite> sprites, Sprite sprite);
+
 }

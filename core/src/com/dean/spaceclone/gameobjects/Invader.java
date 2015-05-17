@@ -14,9 +14,6 @@ public class Invader extends Sprite {
 		setY(y);
 	}
 	
-	public void increaseSpeed() {
-		movementPerTick += 0.5f;
-	}
 	public void moveRight() {
 		setX(getX() + movementPerTick);
 		setDidJustMoveDown(false);
@@ -44,7 +41,4 @@ public class Invader extends Sprite {
 		return movementPerTick;
 	}
 
-	public void setMovementPerTick(float movementPerTick) {
-		this.movementPerTick = movementPerTick;
-	}
 }

@@ -15,4 +15,11 @@
 		<nature>org.springsource.ide.eclipse.gradle.core.nature</nature>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>resources</name>
+			<type>2</type>
+			<location>D:/SpaceInvaderClone/android/resources</location>
+		</link>
+	</linkedResources>
 </projectDescription>

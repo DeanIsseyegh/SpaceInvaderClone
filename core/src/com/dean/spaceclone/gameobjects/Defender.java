@@ -9,12 +9,13 @@ import com.badlogic.gdx.graphics.g2d.Sprite;
 public class Defender extends Sprite {
 	static final Logger logger = LoggerFactory.getLogger(Defender.class);
 	
-	private float moveSpeed = 1;
+	private float moveSpeed;
 
-	public Defender(Texture texture, float x, float y) {
+	public Defender(Texture texture, float x, float y, float moveSpeed) {
 		super(texture);
 		setX(x);
 		setY(y);
+		setMoveSpeed(moveSpeed);
 	}
 
 	public void moveRight() {
@@ -39,5 +40,14 @@ public class Defender extends Sprite {
 		Bullet bullet = new Bullet(texture, topCenterX, topCenterY, speed);
 		return bullet;
 	}
+	
+	public void setMoveSpeed(float moveSpeed) {
+		this.moveSpeed = moveSpeed;
+	}
+
+	public float getMoveSpeed() {
+		return moveSpeed;
+	}
+
 	
 }

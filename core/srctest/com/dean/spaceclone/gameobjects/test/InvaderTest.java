@@ -40,13 +40,6 @@ public class InvaderTest {
 	}
 	
 	@Test
-	public void speedShouldIncreaseCorrectly() {
-		float originalSpeed = invader.getMovementPerTick();
-		invader.increaseSpeed();
-		assertThat(invader.getMovementPerTick(), is(greaterThan(originalSpeed)));
-	}
-	
-	@Test
 	public void shouldMoveLeftCorretly() {
 		float originalXPos = invader.getX();
 		invader.moveLeft();

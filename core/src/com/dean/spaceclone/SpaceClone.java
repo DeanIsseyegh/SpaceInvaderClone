@@ -1,5 +1,11 @@
 package com.dean.spaceclone;
 
+import java.io.File;
+
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Unmarshaller;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -10,13 +16,16 @@ import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.utils.Array;
 import com.dean.spaceclone.controls.ControlsEnum;
 import com.dean.spaceclone.controls.StandardControls;
 import com.dean.spaceclone.gameobjects.Bullet;
 import com.dean.spaceclone.gameobjects.Defender;
 import com.dean.spaceclone.gameobjects.Invader;
+import com.dean.spaceclone.handlers.CollisionHandler;
+import com.dean.spaceclone.handlers.ICollisionHandler;
+import com.dean.spaceclone.settings.ISettings;
+import com.dean.spaceclone.settings.SettingsWrapperXML;
 
 public class SpaceClone extends ApplicationAdapter {
 	static final Logger logger = LoggerFactory.getLogger(SpaceClone.class);
@@ -36,9 +45,16 @@ public class SpaceClone extends ApplicationAdapter {
 	float leftBoundary;
 	float rightBoundary;
 	float ceilingBoundary;
+	float floorBoundary;
 
 	// Settings that should be configurable
-	private float defenderBulletSpeed = 2f;
+	public final static String SETTINGS_LOCATION = "resources/GameSettings.xml";
+	private float defenderBulletSpeed;
+	private float defenderSpeed;
+	private float invaderMovesPerSec;
+
+	public ICollisionHandler collisionHandler = new CollisionHandler();
+	public PositionCalculator positionCalc = new PositionCalculator();
 
 	/**
 	 * This is the first method thats called. We want to setup the initial
@@ -50,24 +66,57 @@ public class SpaceClone extends ApplicationAdapter {
 
 		batch = new SpriteBatch();
 
+		loadSettings();
 		setupControls();
-
 		setupCamera();
-
 		setupBoundaries();
-
 		setupDefender();
-
 		setupInvaders();
 	}
 
+	public void loadSettings() {
+		File file = new File(SETTINGS_LOCATION);
+		try {
+			JAXBContext context = JAXBContext.newInstance(SettingsWrapperXML.class);
+			Unmarshaller um = context.createUnmarshaller();
+			ISettings settings = (ISettings) um.unmarshal(file);
+			this.defenderBulletSpeed = settings.getDefenderBulletSpeed();
+			this.defenderSpeed = settings.getDefenderSpeed();
+			this.invaderMovesPerSec = settings.getInvaderMovesPerSec();
+		} catch (JAXBException e) {
+			logger.warn("Warning, problem loading the settings! Setting game settings to default.");
+			logger.warn(e.toString());
+			loadDefautSettings();
+		} finally {
+			if (defenderBulletSpeed <= 0 || defenderSpeed <= 0 || invaderMovesPerSec <= 0) {
+				logger.warn("Some game settings detected as invalid.\n defenderBulletSpeed was : " + defenderBulletSpeed +
+						"\ndefenderSpeed was : " + defenderSpeed +
+						"\ninvaderMovesPerSec was : " + invaderMovesPerSec +
+						"\nResetting to default values.");
+				loadDefautSettings();
+			}
+		}
+	}
+
+	public void loadDefautSettings() {
+		defenderBulletSpeed = 4f;
+		defenderSpeed = 2f;
+		invaderMovesPerSec = 0.25f;
+		logger.debug("Default settings loaded.\ndefenderBulletSpeed : " + defenderBulletSpeed +
+						"\ndefenderSpeed : " + defenderSpeed +
+						"\ninvaderMovesPerSec : " + invaderMovesPerSec);
+	}
+	
 	private void setupBoundaries() {
 		boundaryOffset = effectiveViewportWidth / 10;
 		leftBoundary = (cam.position.x - effectiveViewportWidth / 2) + boundaryOffset;
 		rightBoundary = (cam.position.x + effectiveViewportWidth / 2) - boundaryOffset;
 		ceilingBoundary = (cam.position.y + effectiveViewportHeight / 2);
+		floorBoundary = (cam.position.y - effectiveViewportHeight / 5);
 		logger.debug("Left boundary set to X : " + leftBoundary);
 		logger.debug("Right boundary set to X : " + rightBoundary);
+		logger.debug("Ceiling boundary set to Y : " + ceilingBoundary);
+		logger.debug("Floor boundary set to Y : " + floorBoundary);
 	}
 
 	@Override
@@ -85,8 +134,32 @@ public class SpaceClone extends ApplicationAdapter {
 		updateInvaders();
 		updateDefender();
 		updateBullets();
+		checkCollisions();
+		checkGameOver();
 
 		batch.end();
+	}
+
+	private boolean checkGameOver() {
+		if (positionCalc.calcLowestSpritePos(invaderList) <= floorBoundary) {
+			// TO DO: Implement Gameover Screen
+			logger.debug("Invader passed lower boundary of " + positionCalc.calcLowestSpritePos(invaderList) + ". Game Over!");
+			System.exit(1);
+		}
+		return false;
+	}
+
+	private void checkCollisions() {
+		// Check for defender bullet hitting invader
+		if (this.invaderList.size > 1 && this.defenderBullet != null) {
+			int indexOfHitInvader = collisionHandler.indexOfSpriteThatCollided(invaderList, defenderBullet);
+			if (indexOfHitInvader > 0) {
+				Invader hitInvader = invaderList.get(indexOfHitInvader);
+				logger.debug("Invader hit at x,y : " + hitInvader.getX() + ", " + hitInvader.getY());
+				invaderList.removeIndex(indexOfHitInvader);
+				defenderBullet = null;
+			}
+		}
 	}
 
 	private void updateBullets() {
@@ -146,8 +219,8 @@ public class SpaceClone extends ApplicationAdapter {
 	private boolean shouldInvadersMoveRight = true;
 
 	private void updateInvaders() {
-		boolean isBeyondRightLimit = calcRightMostInvaderPos(invaderList) >= rightBoundary;
-		boolean isBeyondLeftLimit = calcLeftMostInvaderPos(invaderList) <= leftBoundary;
+		boolean isBeyondRightLimit = positionCalc.calcRightMostSpritePos(invaderList) >= rightBoundary;
+		boolean isBeyondLeftLimit = positionCalc.calcLeftMostSpritePos(invaderList) <= leftBoundary;
 
 		if (isBeyondRightLimit) {
 			shouldInvadersMoveRight = false;
@@ -157,67 +230,24 @@ public class SpaceClone extends ApplicationAdapter {
 
 		for (Invader invader : invaderList) {
 			invader.draw(batch);
-			if (timeSinceInvadersMoved >= 0.25f) {
+			if (timeSinceInvadersMoved >= invaderMovesPerSec) {
 				if ((isBeyondRightLimit || isBeyondLeftLimit) && !invader.didJustMoveDown()) {
 					invader.moveDown();
-					invader.increaseSpeed();
 				} else if (shouldInvadersMoveRight) {
 					invader.moveRight();
 				} else {
 					invader.moveLeft();
 				}
-
 			}
 		}
-		if (timeSinceInvadersMoved >= 0.25f) {
+
+		if (timeSinceInvadersMoved >= invaderMovesPerSec) {
 			timeSinceInvadersMoved = 0;
+			if (invaderList.get(0).didJustMoveDown()) {
+				invaderMovesPerSec += 0.05f;
+				logger.debug("Invaders just moved down. Increasing speed per sec from " + (invaderMovesPerSec - 0.05f) + " to " + invaderMovesPerSec);
+			}
 		}
-	}
-
-	/**
-	 * Will find the Invader in the array which is at the left most position.
-	 * 
-	 * @param invaderList
-	 * @return
-	 */
-	private float calcLeftMostInvaderPos(Array<Invader> invaderList) {
-		boolean isFirstLoop = true;
-		float leftMostPos = 0;
-		for (Invader invader : invaderList) {
-			if (isFirstLoop) {
-				leftMostPos = invader.getX();
-				isFirstLoop = false;
-			}
-			float currentPos = invader.getX();
-			if (currentPos < leftMostPos) {
-				leftMostPos = currentPos;
-			}
-
-		}
-		return leftMostPos;
-	}
-
-	/**
-	 * Will find the Invader in the array which is at the right most position.
-	 * 
-	 * @param invaderList
-	 * @return
-	 */
-	private float calcRightMostInvaderPos(Array<Invader> invaderList) {
-		boolean isFirstLoop = true;
-		float rightMostPos = 0;
-		for (Invader invader : invaderList) {
-			if (isFirstLoop) {
-				rightMostPos = invader.getX();
-				isFirstLoop = false;
-			}
-			float currentPos = invader.getX();
-			if (currentPos > rightMostPos) {
-				rightMostPos = currentPos;
-			}
-
-		}
-		return rightMostPos + invaderList.get(0).getWidth();
 	}
 
 	/**
@@ -247,8 +277,9 @@ public class SpaceClone extends ApplicationAdapter {
 	}
 
 	private void setupDefender() {
-		defender = new Defender(GameTextures.DEFENDER_TEXTURE, cam.position.x - GameTextures.DEFENDER_TEXTURE.getWidth() / 2, cam.position.y
-				- effectiveViewportHeight / 2 + GameTextures.DEFENDER_TEXTURE.getHeight() / 2);
+		float startXPos = cam.position.x - GameTextures.DEFENDER_TEXTURE.getWidth() / 2;
+		float startYPos = cam.position.y - effectiveViewportHeight / 2 + GameTextures.DEFENDER_TEXTURE.getHeight() / 2;
+		defender = new Defender(GameTextures.DEFENDER_TEXTURE, startXPos, startYPos, defenderSpeed);
 		logger.debug("Defender created at x,y : " + defender.getX() + "," + defender.getY());
 	}
 

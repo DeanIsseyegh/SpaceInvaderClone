@@ -13,10 +13,24 @@ import com.sun.xml.internal.txw2.annotation.XmlElement;
 @XmlRootElement(name = "settings")
 public class SettingsWrapperXML implements ISettings {
 
-	private float defenderBulletSpeed = 4f;
-	private float defenderSpeed = 5f;
-	private float invaderMovesPerSec = 0.25f;
-	
+	private float defenderBulletSpeed;
+	private float defenderSpeed;
+	private float invaderMovesPerSec;
+	private float probablityInvaderShooting;
+	private float invaderBulletSpeed;
+
+	@Override
+	@XmlElement
+	public float getInvaderBulletSpeed() {
+		return invaderBulletSpeed;
+	}
+
+	@Override
+	@XmlElement
+	public float getProbablityInvaderShooting() {
+		return probablityInvaderShooting;
+	}
+
 	@Override
 	@XmlElement
 	public float getDefenderBulletSpeed() {
@@ -49,5 +63,25 @@ public class SettingsWrapperXML implements ISettings {
 	public void setInvaderMovesPerSec(float invaderMovesPerSec) {
 		this.invaderMovesPerSec = invaderMovesPerSec;
 	}
+	
+	@Override
+	public void setProbablityInvaderShooting(float probablityInvaderShooting) {
+		this.probablityInvaderShooting = probablityInvaderShooting;
+	}
 
+	@Override
+	public void setInvaderBulletSpeed(float invaderBulletSpeed) {
+		this.invaderBulletSpeed = invaderBulletSpeed;
+	}
+	
+	@Override
+	public String toString() {
+		String defenderBulletSpeedStr = "\n\nDefender Bullet Speed : " + defenderBulletSpeed + "\n";
+		String defenderSpeedStr = "Defender Speed : " + defenderSpeed + "\n";
+		String invaderMovesPerSecStr = "Invader Moves Per Sec : " + invaderMovesPerSec + "\n";
+		String probablityInvaderShootingStr = "Probability of Invader Shooting : " + probablityInvaderShooting +"\n";
+		String invaderBullSpeedStr = "Invader Bullet Speed : " + invaderBulletSpeed +"\n";
+		String str = defenderBulletSpeedStr + defenderSpeedStr + invaderMovesPerSecStr + probablityInvaderShootingStr + invaderBullSpeedStr;
+		return str;
+	}
 }

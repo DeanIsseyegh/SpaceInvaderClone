@@ -14,6 +14,13 @@ public class Invader extends Sprite {
 		setY(y);
 	}
 	
+	public Bullet shoot(Texture texture, float speed) {
+		float bottomCenterY = getY() - getHeight()/2;
+		float bottomCenterX = getX() - getWidth()/2;
+		Bullet bullet = new Bullet(texture, bottomCenterX, bottomCenterY, speed);
+		return bullet;
+	}
+	
 	public void moveRight() {
 		setX(getX() + movementPerTick);
 		setDidJustMoveDown(false);
@@ -25,7 +32,7 @@ public class Invader extends Sprite {
 	}
 	
 	public void moveDown() {
-		setY(getY() - 3);
+		setY(getY() - 6);
 		setDidJustMoveDown(true);
 	}
 	

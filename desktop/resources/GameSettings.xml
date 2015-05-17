@@ -3,4 +3,7 @@
     <defenderBulletSpeed>4</defenderBulletSpeed>
     <defenderSpeed>2</defenderSpeed>
     <invaderMovesPerSec>0.25</invaderMovesPerSec>
+    <invaderSpeedIncrease>0.02</invaderSpeedIncrease>
+    <probablityInvaderShooting>0.0005</probablityInvaderShooting>
+    <invaderBulletSpeed>-2</invaderBulletSpeed>
 </settings>

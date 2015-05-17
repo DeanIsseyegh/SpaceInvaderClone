@@ -17,6 +17,11 @@
 	</natures>
 	<linkedResources>
 		<link>
+			<name>assets</name>
+			<type>2</type>
+			<location>D:/SpaceInvaderClone/android/assets</location>
+		</link>
+		<link>
 			<name>resources</name>
 			<type>2</type>
 			<location>D:/SpaceInvaderClone/android/resources</location>

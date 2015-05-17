@@ -15,4 +15,10 @@ public interface ISettings {
 	
 	float getInvaderMovesPerSec();
 	void setInvaderMovesPerSec(float speed);
+	
+	float getProbablityInvaderShooting();
+	void setProbablityInvaderShooting(float prob);
+	
+	float getInvaderBulletSpeed();
+	void setInvaderBulletSpeed(float speed);
 }

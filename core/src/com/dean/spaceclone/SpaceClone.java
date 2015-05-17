@@ -1,6 +1,8 @@
 package com.dean.spaceclone;
 
 import java.io.File;
+import java.util.Iterator;
+import java.util.Random;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
@@ -32,6 +34,7 @@ public class SpaceClone extends ApplicationAdapter {
 
 	private SpriteBatch batch;
 	private Array<Invader> invaderList;
+	private Array<Bullet> invaderBullets = new Array<>();
 	private Defender defender;
 	private Bullet defenderBullet;
 	private OrthographicCamera cam;
@@ -45,16 +48,21 @@ public class SpaceClone extends ApplicationAdapter {
 	float leftBoundary;
 	float rightBoundary;
 	float ceilingBoundary;
+	float invaderFloorBoundary;
 	float floorBoundary;
 
-	// Settings that should be configurable
+	// Settings that should be configurable //
 	public final static String SETTINGS_LOCATION = "resources/GameSettings.xml";
 	private float defenderBulletSpeed;
 	private float defenderSpeed;
 	private float invaderMovesPerSec;
+	private float probablityInvaderShooting;
+	private float invaderBulletSpeed;
+	// End Of Settings that should be configurable //
 
-	public ICollisionHandler collisionHandler = new CollisionHandler();
-	public PositionCalculator positionCalc = new PositionCalculator();
+	private ICollisionHandler collisionHandler = new CollisionHandler();
+	private PositionCalculator positionCalc = new PositionCalculator();
+	private Random rand = new Random();
 
 	/**
 	 * This is the first method thats called. We want to setup the initial
@@ -83,15 +91,20 @@ public class SpaceClone extends ApplicationAdapter {
 			this.defenderBulletSpeed = settings.getDefenderBulletSpeed();
 			this.defenderSpeed = settings.getDefenderSpeed();
 			this.invaderMovesPerSec = settings.getInvaderMovesPerSec();
+			this.probablityInvaderShooting = settings.getProbablityInvaderShooting();
+			this.invaderBulletSpeed = settings.getInvaderBulletSpeed();
+			logger.debug("Loaded settings successfully!" + settings.toString());
 		} catch (JAXBException e) {
 			logger.warn("Warning, problem loading the settings! Setting game settings to default.");
 			logger.warn(e.toString());
 			loadDefautSettings();
 		} finally {
-			if (defenderBulletSpeed <= 0 || defenderSpeed <= 0 || invaderMovesPerSec <= 0) {
+			if (defenderBulletSpeed <= 0 || defenderSpeed <= 0 || invaderMovesPerSec <= 0 || invaderBulletSpeed <= 0) {
 				logger.warn("Some game settings detected as invalid.\n defenderBulletSpeed was : " + defenderBulletSpeed +
 						"\ndefenderSpeed was : " + defenderSpeed +
 						"\ninvaderMovesPerSec was : " + invaderMovesPerSec +
+						"\nprobablityInvaderShooting was : " + probablityInvaderShooting +
+						"\ninvaderBulletSpeed was : " + invaderBulletSpeed +
 						"\nResetting to default values.");
 				loadDefautSettings();
 			}
@@ -102,9 +115,13 @@ public class SpaceClone extends ApplicationAdapter {
 		defenderBulletSpeed = 4f;
 		defenderSpeed = 2f;
 		invaderMovesPerSec = 0.25f;
+		probablityInvaderShooting = 0.0005f;
+		invaderBulletSpeed = -2;
 		logger.debug("Default settings loaded.\ndefenderBulletSpeed : " + defenderBulletSpeed +
 						"\ndefenderSpeed : " + defenderSpeed +
-						"\ninvaderMovesPerSec : " + invaderMovesPerSec);
+						"\ninvaderMovesPerSec : " + invaderMovesPerSec +
+						"\nprobablityInvaderShooting : " + probablityInvaderShooting +
+						"\ninvaderBulletSpeed : " + invaderBulletSpeed);
 	}
 	
 	private void setupBoundaries() {
@@ -112,10 +129,12 @@ public class SpaceClone extends ApplicationAdapter {
 		leftBoundary = (cam.position.x - effectiveViewportWidth / 2) + boundaryOffset;
 		rightBoundary = (cam.position.x + effectiveViewportWidth / 2) - boundaryOffset;
 		ceilingBoundary = (cam.position.y + effectiveViewportHeight / 2);
-		floorBoundary = (cam.position.y - effectiveViewportHeight / 5);
+		invaderFloorBoundary = (cam.position.y - effectiveViewportHeight / 5);
+		floorBoundary = (cam.position.y - effectiveViewportHeight);
 		logger.debug("Left boundary set to X : " + leftBoundary);
 		logger.debug("Right boundary set to X : " + rightBoundary);
 		logger.debug("Ceiling boundary set to Y : " + ceilingBoundary);
+		logger.debug("Invader Floor boundary set to Y : " + invaderFloorBoundary);
 		logger.debug("Floor boundary set to Y : " + floorBoundary);
 	}
 
@@ -141,7 +160,7 @@ public class SpaceClone extends ApplicationAdapter {
 	}
 
 	private boolean checkGameOver() {
-		if (positionCalc.calcLowestSpritePos(invaderList) <= floorBoundary) {
+		if (positionCalc.calcLowestSpritePos(invaderList) <= invaderFloorBoundary) {
 			// TO DO: Implement Gameover Screen
 			logger.debug("Invader passed lower boundary of " + positionCalc.calcLowestSpritePos(invaderList) + ". Game Over!");
 			System.exit(1);
@@ -151,7 +170,7 @@ public class SpaceClone extends ApplicationAdapter {
 
 	private void checkCollisions() {
 		// Check for defender bullet hitting invader
-		if (this.invaderList.size > 1 && this.defenderBullet != null) {
+		if (this.invaderList.size > 0 && this.defenderBullet != null) {
 			int indexOfHitInvader = collisionHandler.indexOfSpriteThatCollided(invaderList, defenderBullet);
 			if (indexOfHitInvader > 0) {
 				Invader hitInvader = invaderList.get(indexOfHitInvader);
@@ -160,7 +179,17 @@ public class SpaceClone extends ApplicationAdapter {
 				defenderBullet = null;
 			}
 		}
-	}
+		
+		// Check for invader bullets hitting defender
+		if (this.invaderBullets.size > 0) {
+			int indexOfBulletThatHit = collisionHandler.indexOfSpriteThatCollided(invaderBullets, defender);
+				if (indexOfBulletThatHit > 0) {
+					// TO DO: Implement Gameover Screen
+					logger.debug("Defender was shot! Game Over!");
+					System.exit(1);
+				}
+			}
+		}
 
 	private void updateBullets() {
 		if (this.defenderBullet != null) {
@@ -168,6 +197,16 @@ public class SpaceClone extends ApplicationAdapter {
 			defenderBullet.update();
 			if (defenderBullet.getY() >= ceilingBoundary) {
 				defenderBullet = null;
+			}
+		}
+		
+		Iterator<Bullet> iterator = invaderBullets.iterator();
+		while(iterator.hasNext()) {
+			Bullet invBullet = iterator.next();
+			invBullet.draw(batch);
+			invBullet.update();
+			if (invBullet.getY() <= floorBoundary) {
+				invaderBullets.removeValue(invBullet, true);
 			}
 		}
 	}
@@ -230,6 +269,11 @@ public class SpaceClone extends ApplicationAdapter {
 
 		for (Invader invader : invaderList) {
 			invader.draw(batch);
+			double randomDouble = rand.nextDouble();
+			if (randomDouble <= probablityInvaderShooting) {
+				Bullet invBullet = invader.shoot(GameTextures.INVADER_BULLET_TEXTURE, invaderBulletSpeed);
+				invaderBullets.add(invBullet);
+			}
 			if (timeSinceInvadersMoved >= invaderMovesPerSec) {
 				if ((isBeyondRightLimit || isBeyondLeftLimit) && !invader.didJustMoveDown()) {
 					invader.moveDown();
@@ -241,11 +285,13 @@ public class SpaceClone extends ApplicationAdapter {
 			}
 		}
 
+		// Per tick
 		if (timeSinceInvadersMoved >= invaderMovesPerSec) {
 			timeSinceInvadersMoved = 0;
 			if (invaderList.get(0).didJustMoveDown()) {
-				invaderMovesPerSec += 0.05f;
-				logger.debug("Invaders just moved down. Increasing speed per sec from " + (invaderMovesPerSec - 0.05f) + " to " + invaderMovesPerSec);
+				invaderMovesPerSec += 0 - invaderMovesPerSec/12;
+				logger.debug("Invaders just moved down. Increasing speed per sec from " + (invaderMovesPerSec + invaderMovesPerSec/12) + " to " + invaderMovesPerSec
+						+ " per second.");
 			}
 		}
 	}

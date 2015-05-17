@@ -10,4 +10,6 @@ public class GameTextures {
 	public static Texture INVADER_TEXTURE = new Texture(Gdx.files.internal("Invader.png"));
 	
 	public static Texture DEFENDER_BULLET_TEXTURE = new Texture(Gdx.files.internal("DefenderBullet.png"));
+	
+	public static Texture INVADER_BULLET_TEXTURE = new Texture(Gdx.files.internal("InvaderBullet.png"));
 }

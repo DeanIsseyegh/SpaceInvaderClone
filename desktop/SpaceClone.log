@@ -1,815 +1,619 @@
-2015-05-17 16:22:29.400 [LWJGL Application] INFO  com.dean.spaceclone.SpaceClone - Game has been started.
-2015-05-17 16:22:29.457 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Effective viewport width x height set to : 400.0 x 300.0
-2015-05-17 16:22:29.457 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Left boundary set to X : 240.0
-2015-05-17 16:22:29.457 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Right boundary set to X : 560.0
-2015-05-17 16:22:29.457 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Ceiling boundary set to Y : 450.0
-2015-05-17 16:22:29.457 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Floor boundary set to Y : 240.0
-2015-05-17 16:22:29.466 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender created at x,y : 389.0,158.0
-2015-05-17 16:22:29.466 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 296,300
-2015-05-17 16:22:29.466 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 315,300
-2015-05-17 16:22:29.467 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 334,300
-2015-05-17 16:22:29.467 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 353,300
-2015-05-17 16:22:29.467 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 372,300
-2015-05-17 16:22:29.467 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 391,300
-2015-05-17 16:22:29.467 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 410,300
-2015-05-17 16:22:29.467 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 429,300
-2015-05-17 16:22:29.467 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 448,300
-2015-05-17 16:22:29.467 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 467,300
-2015-05-17 16:22:29.467 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 486,300
-2015-05-17 16:22:29.467 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 296,319
-2015-05-17 16:22:29.467 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 315,319
-2015-05-17 16:22:29.467 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 334,319
-2015-05-17 16:22:29.467 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 353,319
-2015-05-17 16:22:29.467 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 372,319
-2015-05-17 16:22:29.467 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 391,319
-2015-05-17 16:22:29.467 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 410,319
-2015-05-17 16:22:29.467 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 429,319
-2015-05-17 16:22:29.467 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 448,319
-2015-05-17 16:22:29.467 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 467,319
-2015-05-17 16:22:29.468 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 486,319
-2015-05-17 16:22:29.468 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 296,338
-2015-05-17 16:22:29.468 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 315,338
-2015-05-17 16:22:29.468 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 334,338
-2015-05-17 16:22:29.468 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 353,338
-2015-05-17 16:22:29.468 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 372,338
-2015-05-17 16:22:29.468 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 391,338
-2015-05-17 16:22:29.468 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 410,338
-2015-05-17 16:22:29.468 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 429,338
-2015-05-17 16:22:29.468 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 448,338
-2015-05-17 16:22:29.468 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 467,338
-2015-05-17 16:22:29.468 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 486,338
-2015-05-17 16:22:29.468 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 296,357
-2015-05-17 16:22:29.468 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 315,357
-2015-05-17 16:22:29.468 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 334,357
-2015-05-17 16:22:29.468 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 353,357
-2015-05-17 16:22:29.468 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 372,357
-2015-05-17 16:22:29.468 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 391,357
-2015-05-17 16:22:29.468 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 410,357
-2015-05-17 16:22:29.469 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 429,357
-2015-05-17 16:22:29.469 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 448,357
-2015-05-17 16:22:29.469 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 467,357
-2015-05-17 16:22:29.469 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 486,357
-2015-05-17 16:22:29.469 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 296,376
-2015-05-17 16:22:29.469 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 315,376
-2015-05-17 16:22:29.469 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 334,376
-2015-05-17 16:22:29.469 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 353,376
-2015-05-17 16:22:29.469 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 372,376
-2015-05-17 16:22:29.469 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 391,376
-2015-05-17 16:22:29.469 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 410,376
-2015-05-17 16:22:29.469 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 429,376
-2015-05-17 16:22:29.469 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 448,376
-2015-05-17 16:22:29.469 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 467,376
-2015-05-17 16:22:29.469 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 486,376
-2015-05-17 16:22:29.542 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Right key press detected
-2015-05-17 16:22:29.543 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:29.559 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:29.575 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:29.591 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:29.608 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:29.624 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:29.641 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:29.658 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:29.674 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:29.691 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:29.708 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:29.724 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:29.742 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:29.759 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:29.775 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:29.792 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:29.809 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Left key press detected
-2015-05-17 16:22:29.809 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Right key no longer being pressed
-2015-05-17 16:22:29.809 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:29.825 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:29.826 [LWJGL Application] DEBUG com.dean.spaceclone.gameobjects.Bullet - Bullet created at x,y : 428.0,166.0. Speed is : 4.0
-2015-05-17 16:22:29.826 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to shoot
-2015-05-17 16:22:29.842 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:29.858 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:29.874 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:29.891 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:29.908 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:29.924 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:29.941 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:29.958 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:29.974 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:29.991 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:30.008 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:30.024 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:30.041 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:30.058 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:30.074 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:30.091 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:30.109 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:30.125 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:30.142 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:30.159 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:30.175 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:30.191 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:30.208 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:30.224 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:30.241 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:30.258 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:30.274 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:30.291 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:30.308 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:30.324 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:30.324 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader hit at x,y : 425.0, 300.0
-2015-05-17 16:22:30.341 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:30.358 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:30.374 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:30.391 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:30.408 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:30.424 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:30.442 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:30.459 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Right key press detected
-2015-05-17 16:22:30.459 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:30.475 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:30.492 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:30.509 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Left key no longer being pressed
-2015-05-17 16:22:30.509 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:30.525 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:30.542 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:30.559 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:30.575 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:30.591 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:30.609 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:30.624 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:30.641 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:30.658 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:30.658 [LWJGL Application] DEBUG com.dean.spaceclone.gameobjects.Bullet - Bullet created at x,y : 368.0,166.0. Speed is : 4.0
-2015-05-17 16:22:30.658 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to shoot
-2015-05-17 16:22:30.674 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:30.691 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:30.708 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:30.724 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:30.741 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:30.759 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:30.775 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:30.791 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:30.808 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:30.825 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:30.843 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:30.859 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:30.875 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:30.892 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:30.908 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:30.924 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:30.941 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:30.958 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:30.974 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:30.991 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:31.008 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:31.024 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:31.041 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:31.059 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:31.075 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:31.092 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:31.109 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:31.125 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:31.142 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:31.158 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:31.158 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader hit at x,y : 364.0, 300.0
-2015-05-17 16:22:31.174 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:31.191 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:31.208 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:31.224 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:31.241 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:31.258 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:31.274 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Left key press detected
-2015-05-17 16:22:31.274 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:31.292 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:31.309 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:31.325 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Right key no longer being pressed
-2015-05-17 16:22:31.325 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:31.342 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:31.359 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:31.375 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:31.391 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:31.408 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:31.424 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:31.441 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:31.459 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:31.459 [LWJGL Application] DEBUG com.dean.spaceclone.gameobjects.Bullet - Bullet created at x,y : 416.0,166.0. Speed is : 4.0
-2015-05-17 16:22:31.459 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to shoot
-2015-05-17 16:22:31.475 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:31.492 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:31.509 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:31.525 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:31.542 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:31.559 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:31.575 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:31.592 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:31.609 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:31.625 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:31.642 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:31.658 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:31.674 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:31.691 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:31.708 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:31.725 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:31.742 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:31.759 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:31.774 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:31.791 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:31.808 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:31.824 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:31.841 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:31.858 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:31.874 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:31.891 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:31.909 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:31.925 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:31.942 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:31.959 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:31.959 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader hit at x,y : 417.0, 300.0
-2015-05-17 16:22:31.974 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Right key press detected
-2015-05-17 16:22:31.974 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:31.991 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:32.008 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:32.024 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:32.041 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:32.058 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Left key no longer being pressed
-2015-05-17 16:22:32.058 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:32.075 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:32.092 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:32.109 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:32.125 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:32.142 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:32.159 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:32.175 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:32.192 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:32.208 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:32.224 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:32.224 [LWJGL Application] DEBUG com.dean.spaceclone.gameobjects.Bullet - Bullet created at x,y : 368.0,166.0. Speed is : 4.0
-2015-05-17 16:22:32.224 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to shoot
-2015-05-17 16:22:32.241 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:32.258 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:32.274 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:32.291 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:32.308 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:32.324 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:32.341 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:32.358 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:32.375 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:32.392 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:32.408 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:32.424 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:32.441 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:32.458 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:32.474 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:32.491 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:32.508 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:32.524 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:32.542 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:32.559 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:32.575 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:32.592 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:32.609 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:32.625 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:32.641 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:32.658 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:32.674 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:32.691 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:32.709 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:32.725 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:32.742 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:32.759 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:32.775 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:32.792 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:32.809 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:32.824 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:32.841 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invaders just moved down. Increasing speed per sec from 0.25 to 0.3
-2015-05-17 16:22:32.841 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:32.841 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader hit at x,y : 356.0, 316.0
-2015-05-17 16:22:32.858 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:32.874 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:32.891 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Left key press detected
-2015-05-17 16:22:32.891 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:32.909 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Right key no longer being pressed
-2015-05-17 16:22:32.909 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:32.925 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:32.925 [LWJGL Application] DEBUG com.dean.spaceclone.gameobjects.Bullet - Bullet created at x,y : 440.0,166.0. Speed is : 4.0
-2015-05-17 16:22:32.925 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to shoot
-2015-05-17 16:22:32.942 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:32.959 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:32.975 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:32.991 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:33.008 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:33.024 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:33.041 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:33.058 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:33.074 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:33.091 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:33.108 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:33.125 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:33.142 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:33.159 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:33.175 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:33.191 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:33.208 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:33.224 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:33.241 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:33.258 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:33.274 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:33.291 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:33.308 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:33.324 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:33.341 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:33.358 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:33.374 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:33.392 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:33.409 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:33.425 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:33.442 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:33.459 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:33.459 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader hit at x,y : 441.0, 297.0
-2015-05-17 16:22:33.475 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:33.492 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:33.509 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:33.525 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:33.542 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:33.559 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Right key press detected
-2015-05-17 16:22:33.559 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:33.574 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:33.591 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:33.608 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Left key no longer being pressed
-2015-05-17 16:22:33.608 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:33.624 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:33.624 [LWJGL Application] DEBUG com.dean.spaceclone.gameobjects.Bullet - Bullet created at x,y : 364.0,166.0. Speed is : 4.0
-2015-05-17 16:22:33.624 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to shoot
-2015-05-17 16:22:33.641 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:33.658 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:33.676 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:33.691 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:33.708 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:33.724 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:33.742 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:33.760 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:33.775 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:33.792 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:33.809 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:33.825 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:33.842 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:33.859 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:33.875 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:33.892 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:33.909 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:33.925 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:33.942 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:33.959 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:33.974 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:33.991 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:34.008 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:34.024 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:34.041 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:34.058 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:34.074 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:34.091 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:34.109 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:34.109 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader hit at x,y : 355.0, 297.0
-2015-05-17 16:22:34.125 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:34.142 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:34.159 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:34.175 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:34.192 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:34.209 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:34.225 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:34.242 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:34.259 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:34.275 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Left key press detected
-2015-05-17 16:22:34.275 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:34.292 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Right key no longer being pressed
-2015-05-17 16:22:34.292 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:34.309 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:34.309 [LWJGL Application] DEBUG com.dean.spaceclone.gameobjects.Bullet - Bullet created at x,y : 434.0,166.0. Speed is : 4.0
-2015-05-17 16:22:34.309 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to shoot
-2015-05-17 16:22:34.324 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:34.341 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:34.358 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:34.374 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:34.391 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:34.408 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:34.424 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:34.441 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:34.458 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:34.474 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:34.491 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:34.509 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:34.525 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:34.542 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:34.559 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:34.575 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:34.592 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:34.609 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:34.625 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:34.642 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:34.659 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:34.675 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:34.691 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:34.708 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:34.724 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:34.741 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:34.758 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:34.774 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:34.792 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:34.809 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:34.825 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:34.842 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:34.859 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:34.874 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:34.874 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader hit at x,y : 421.0, 316.0
-2015-05-17 16:22:34.891 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:34.908 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:34.924 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:34.941 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Right key press detected
-2015-05-17 16:22:34.941 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:34.959 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:34.975 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:34.992 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Left key no longer being pressed
-2015-05-17 16:22:34.992 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:35.009 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:35.009 [LWJGL Application] DEBUG com.dean.spaceclone.gameobjects.Bullet - Bullet created at x,y : 358.0,166.0. Speed is : 4.0
-2015-05-17 16:22:35.009 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to shoot
-2015-05-17 16:22:35.025 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:35.042 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:35.058 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:35.074 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:35.091 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:35.108 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:35.124 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:35.141 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:35.158 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:35.174 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:35.191 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:35.208 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:35.224 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:35.241 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:35.258 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:35.274 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:35.292 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:35.309 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:35.325 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:35.342 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:35.358 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:35.374 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:35.391 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:35.408 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:35.425 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:35.442 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:35.459 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:35.475 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:35.491 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:35.508 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:35.524 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:35.541 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:35.558 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:35.575 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:35.575 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader hit at x,y : 354.0, 316.0
-2015-05-17 16:22:35.592 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:35.592 [LWJGL Application] DEBUG com.dean.spaceclone.gameobjects.Bullet - Bullet created at x,y : 428.0,166.0. Speed is : 4.0
-2015-05-17 16:22:35.592 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to shoot
-2015-05-17 16:22:35.609 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Left key press detected
-2015-05-17 16:22:35.609 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:35.625 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:35.642 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Right key no longer being pressed
-2015-05-17 16:22:35.642 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:35.659 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:35.675 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:35.692 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:35.709 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:35.724 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:35.741 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:35.758 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:35.774 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:35.791 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:35.808 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:35.825 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:35.842 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:35.859 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:35.875 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:35.892 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:35.908 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:35.924 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:35.941 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:35.958 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:35.974 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:35.991 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:36.008 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:36.024 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:36.041 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:36.058 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:36.074 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:36.092 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:36.109 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:36.125 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:36.142 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:36.159 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:36.159 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader hit at x,y : 420.0, 316.0
-2015-05-17 16:22:36.175 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:36.191 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:36.208 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Right key press detected
-2015-05-17 16:22:36.208 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:36.224 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:36.241 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:36.258 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:36.274 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:36.274 [LWJGL Application] DEBUG com.dean.spaceclone.gameobjects.Bullet - Bullet created at x,y : 346.0,166.0. Speed is : 4.0
-2015-05-17 16:22:36.274 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to shoot
-2015-05-17 16:22:36.291 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Left key no longer being pressed
-2015-05-17 16:22:36.291 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:36.308 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:36.324 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:36.341 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:36.358 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:36.375 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:36.392 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:36.409 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:36.425 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:36.442 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:36.458 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:36.474 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:36.491 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:36.508 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:36.524 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:36.541 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:36.558 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:36.574 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:36.591 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:36.608 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:36.624 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:36.641 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:36.659 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:36.675 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:36.692 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:36.709 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:36.724 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:36.741 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:36.758 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:36.774 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:36.791 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:36.808 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:36.824 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:36.841 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:36.858 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:36.858 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader hit at x,y : 348.0, 297.0
-2015-05-17 16:22:36.874 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:36.874 [LWJGL Application] DEBUG com.dean.spaceclone.gameobjects.Bullet - Bullet created at x,y : 418.0,166.0. Speed is : 4.0
-2015-05-17 16:22:36.874 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to shoot
-2015-05-17 16:22:36.891 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:36.908 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:36.924 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:36.942 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:36.959 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Left key press detected
-2015-05-17 16:22:36.959 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:36.975 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Right key no longer being pressed
-2015-05-17 16:22:36.975 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:36.992 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:37.009 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:37.025 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:37.041 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:37.058 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:37.074 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:37.091 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:37.108 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:37.125 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:37.142 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:37.159 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:37.175 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:37.192 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:37.209 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:37.224 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:37.241 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:37.258 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:37.274 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:37.291 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:37.308 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:37.324 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:37.341 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:37.358 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:37.358 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader hit at x,y : 419.0, 297.0
-2015-05-17 16:22:37.374 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:37.392 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:37.409 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:37.425 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:37.442 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:37.458 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:37.474 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:37.491 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:37.508 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:37.524 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:37.541 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:37.558 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:37.574 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:37.591 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Right key press detected
-2015-05-17 16:22:37.591 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:37.591 [LWJGL Application] DEBUG com.dean.spaceclone.gameobjects.Bullet - Bullet created at x,y : 348.0,166.0. Speed is : 4.0
-2015-05-17 16:22:37.591 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to shoot
-2015-05-17 16:22:37.608 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:37.624 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Left key no longer being pressed
-2015-05-17 16:22:37.624 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:37.641 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:37.658 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:37.674 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:37.691 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:37.708 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:37.724 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:37.741 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:37.758 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:37.774 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:37.792 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:37.808 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:37.825 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:37.842 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:37.859 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:37.875 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:37.892 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:37.909 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:37.925 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:37.944 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:37.962 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:37.974 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:37.991 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:38.008 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:38.024 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:38.041 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:38.058 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:38.074 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:38.092 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:38.109 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:38.125 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:38.142 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:38.158 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:38.158 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader hit at x,y : 347.0, 316.0
-2015-05-17 16:22:38.174 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:38.191 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:38.208 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:38.224 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:38.224 [LWJGL Application] DEBUG com.dean.spaceclone.gameobjects.Bullet - Bullet created at x,y : 420.0,166.0. Speed is : 4.0
-2015-05-17 16:22:38.224 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to shoot
-2015-05-17 16:22:38.241 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Left key press detected
-2015-05-17 16:22:38.241 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:38.258 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Right key no longer being pressed
-2015-05-17 16:22:38.258 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:38.274 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:38.291 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:38.308 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:38.324 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:38.341 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:38.359 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:38.375 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:38.392 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:38.409 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:38.425 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:38.441 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:38.459 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:38.474 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:38.491 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:38.508 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:38.524 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:38.541 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:38.558 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:38.574 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:38.591 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:38.608 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:38.625 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:38.642 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:38.659 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:38.675 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:38.692 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:38.709 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:38.709 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader hit at x,y : 413.0, 297.0
-2015-05-17 16:22:38.725 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:38.741 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:38.758 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:38.774 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:38.791 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:38.808 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:38.824 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:38.841 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:38.858 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:38.874 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:38.891 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:38.909 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:38.925 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:38.942 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Right key press detected
-2015-05-17 16:22:38.942 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:38.959 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:38.975 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:38.992 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:38.992 [LWJGL Application] DEBUG com.dean.spaceclone.gameobjects.Bullet - Bullet created at x,y : 328.0,166.0. Speed is : 4.0
-2015-05-17 16:22:38.992 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to shoot
-2015-05-17 16:22:39.009 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:39.025 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:39.041 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Left key no longer being pressed
-2015-05-17 16:22:39.041 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:39.058 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:39.074 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:39.091 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:39.108 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:39.124 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:39.141 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:39.158 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:39.174 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:39.192 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:39.209 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:39.225 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:39.242 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:39.259 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:39.275 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:39.292 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:39.309 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:39.325 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:39.341 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:39.358 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:39.374 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:39.391 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:39.408 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:39.424 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:39.441 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:39.458 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:39.474 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:39.492 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:39.509 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:39.525 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:39.542 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:39.559 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:39.575 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:39.591 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:39.608 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:39.624 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Left key press detected
-2015-05-17 16:22:39.624 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:39.641 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:39.641 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader hit at x,y : 322.0, 335.0
-2015-05-17 16:22:39.658 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:39.658 [LWJGL Application] DEBUG com.dean.spaceclone.gameobjects.Bullet - Bullet created at x,y : 388.0,166.0. Speed is : 4.0
-2015-05-17 16:22:39.658 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to shoot
-2015-05-17 16:22:39.674 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Right key no longer being pressed
-2015-05-17 16:22:39.674 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:39.691 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:39.709 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:39.725 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:39.742 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:39.759 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:39.775 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:39.792 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:39.809 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:39.825 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:39.841 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:39.858 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:39.874 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:39.891 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:39.909 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:39.925 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:39.942 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:39.959 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:39.975 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:39.992 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:40.009 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:40.025 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:40.041 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:40.058 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:40.074 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:40.091 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:40.112 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:40.124 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:40.141 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:40.158 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:40.174 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:40.191 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:40.208 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:40.225 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:40.225 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader hit at x,y : 388.0, 316.0
-2015-05-17 16:22:40.242 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:40.259 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:40.275 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:40.291 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:40.308 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:40.324 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:40.341 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Right key press detected
-2015-05-17 16:22:40.341 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:40.358 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:40.358 [LWJGL Application] DEBUG com.dean.spaceclone.gameobjects.Bullet - Bullet created at x,y : 304.0,166.0. Speed is : 4.0
-2015-05-17 16:22:40.358 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to shoot
-2015-05-17 16:22:40.374 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
-2015-05-17 16:22:40.391 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Left key no longer being pressed
-2015-05-17 16:22:40.391 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:40.408 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:40.424 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:40.441 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:40.458 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:40.475 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:40.492 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:40.509 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:40.525 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invaders just moved down. Increasing speed per sec from 0.3 to 0.35000002
-2015-05-17 16:22:40.525 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:40.542 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:40.559 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:40.574 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:40.591 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:40.608 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:40.624 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:40.641 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:40.658 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:40.674 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
-2015-05-17 16:22:40.692 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Right key no longer being pressed
-2015-05-17 16:22:40.909 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader hit at x,y : 298.0, 313.0
+2015-05-17 17:51:49.668 [LWJGL Application] INFO  com.dean.spaceclone.SpaceClone - Game has been started.
+2015-05-17 17:51:49.727 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Loaded settings successfully!
+
+Defender Bullet Speed : 4.0
+Defender Speed : 2.0
+Invader Moves Per Sec : 0.25
+Probability of Invader Shooting : 5.0E-4
+Invader Bullet Speed : -2.0
+
+2015-05-17 17:51:49.728 [LWJGL Application] WARN  com.dean.spaceclone.SpaceClone - Some game settings detected as invalid.
+ defenderBulletSpeed was : 4.0
+defenderSpeed was : 2.0
+invaderMovesPerSec was : 0.25
+probablityInvaderShooting was : 5.0E-4
+invaderBulletSpeed was : -2.0
+Resetting to default values.
+2015-05-17 17:51:49.728 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Default settings loaded.
+defenderBulletSpeed : 4.0
+defenderSpeed : 2.0
+invaderMovesPerSec : 0.25
+probablityInvaderShooting : 5.0E-4
+invaderBulletSpeed : -2.0
+2015-05-17 17:51:49.731 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Effective viewport width x height set to : 400.0 x 300.0
+2015-05-17 17:51:49.731 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Left boundary set to X : 240.0
+2015-05-17 17:51:49.731 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Right boundary set to X : 560.0
+2015-05-17 17:51:49.731 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Ceiling boundary set to Y : 450.0
+2015-05-17 17:51:49.731 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader Floor boundary set to Y : 240.0
+2015-05-17 17:51:49.731 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Floor boundary set to Y : 0.0
+2015-05-17 17:51:49.741 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender created at x,y : 389.0,158.0
+2015-05-17 17:51:49.742 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 296,300
+2015-05-17 17:51:49.742 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 315,300
+2015-05-17 17:51:49.742 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 334,300
+2015-05-17 17:51:49.742 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 353,300
+2015-05-17 17:51:49.742 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 372,300
+2015-05-17 17:51:49.742 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 391,300
+2015-05-17 17:51:49.742 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 410,300
+2015-05-17 17:51:49.742 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 429,300
+2015-05-17 17:51:49.742 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 448,300
+2015-05-17 17:51:49.742 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 467,300
+2015-05-17 17:51:49.742 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 486,300
+2015-05-17 17:51:49.742 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 296,319
+2015-05-17 17:51:49.742 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 315,319
+2015-05-17 17:51:49.743 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 334,319
+2015-05-17 17:51:49.743 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 353,319
+2015-05-17 17:51:49.743 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 372,319
+2015-05-17 17:51:49.743 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 391,319
+2015-05-17 17:51:49.743 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 410,319
+2015-05-17 17:51:49.743 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 429,319
+2015-05-17 17:51:49.743 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 448,319
+2015-05-17 17:51:49.743 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 467,319
+2015-05-17 17:51:49.743 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 486,319
+2015-05-17 17:51:49.743 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 296,338
+2015-05-17 17:51:49.743 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 315,338
+2015-05-17 17:51:49.743 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 334,338
+2015-05-17 17:51:49.743 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 353,338
+2015-05-17 17:51:49.743 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 372,338
+2015-05-17 17:51:49.743 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 391,338
+2015-05-17 17:51:49.743 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 410,338
+2015-05-17 17:51:49.743 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 429,338
+2015-05-17 17:51:49.744 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 448,338
+2015-05-17 17:51:49.744 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 467,338
+2015-05-17 17:51:49.744 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 486,338
+2015-05-17 17:51:49.744 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 296,357
+2015-05-17 17:51:49.744 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 315,357
+2015-05-17 17:51:49.744 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 334,357
+2015-05-17 17:51:49.744 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 353,357
+2015-05-17 17:51:49.744 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 372,357
+2015-05-17 17:51:49.744 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 391,357
+2015-05-17 17:51:49.744 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 410,357
+2015-05-17 17:51:49.744 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 429,357
+2015-05-17 17:51:49.744 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 448,357
+2015-05-17 17:51:49.744 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 467,357
+2015-05-17 17:51:49.744 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 486,357
+2015-05-17 17:51:49.744 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 296,376
+2015-05-17 17:51:49.744 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 315,376
+2015-05-17 17:51:49.744 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 334,376
+2015-05-17 17:51:49.744 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 353,376
+2015-05-17 17:51:49.744 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 372,376
+2015-05-17 17:51:49.745 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 391,376
+2015-05-17 17:51:49.745 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 410,376
+2015-05-17 17:51:49.745 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 429,376
+2015-05-17 17:51:49.745 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 448,376
+2015-05-17 17:51:49.745 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 467,376
+2015-05-17 17:51:49.745 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader created at x,y : 486,376
+2015-05-17 17:51:50.317 [LWJGL Application] DEBUG com.dean.spaceclone.gameobjects.Bullet - Bullet created at x,y : 488.0,330.0. Speed is : -2.0
+2015-05-17 17:51:50.685 [LWJGL Application] DEBUG com.dean.spaceclone.gameobjects.Bullet - Bullet created at x,y : 493.0,311.0. Speed is : -2.0
+2015-05-17 17:51:50.685 [LWJGL Application] DEBUG com.dean.spaceclone.gameobjects.Bullet - Bullet created at x,y : 379.0,349.0. Speed is : -2.0
+2015-05-17 17:51:50.819 [LWJGL Application] DEBUG com.dean.spaceclone.gameobjects.Bullet - Bullet created at x,y : 322.0,311.0. Speed is : -2.0
+2015-05-17 17:51:51.186 [LWJGL Application] DEBUG com.dean.spaceclone.gameobjects.Bullet - Bullet created at x,y : 389.0,292.0. Speed is : -2.0
+2015-05-17 17:51:51.388 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Left key press detected
+2015-05-17 17:51:51.388 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:51.421 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:51.453 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:51.487 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:51.520 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:51.554 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:51.587 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:51.620 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:51.654 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:51.687 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:51.721 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Left key no longer being pressed
+2015-05-17 17:51:51.888 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Right key press detected
+2015-05-17 17:51:51.888 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:51.921 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:51.954 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:51.988 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:52.021 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:52.054 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:52.088 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:52.121 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:52.155 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:52.188 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:52.221 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:52.255 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:52.288 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:52.321 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:52.355 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:52.388 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:52.422 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:52.457 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:52.488 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:52.522 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:52.555 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:52.588 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:52.622 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:52.655 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Right key no longer being pressed
+2015-05-17 17:51:52.956 [LWJGL Application] DEBUG com.dean.spaceclone.gameobjects.Bullet - Bullet created at x,y : 514.0,311.0. Speed is : -2.0
+2015-05-17 17:51:53.024 [LWJGL Application] DEBUG com.dean.spaceclone.gameobjects.Bullet - Bullet created at x,y : 426.0,166.0. Speed is : 4.0
+2015-05-17 17:51:53.024 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to shoot
+2015-05-17 17:51:53.224 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invaders just moved down. Increasing speed per sec from 0.2482639 to 0.22916667 per second.
+2015-05-17 17:51:53.324 [LWJGL Application] DEBUG com.dean.spaceclone.gameobjects.Bullet - Bullet created at x,y : 386.0,286.0. Speed is : -2.0
+2015-05-17 17:51:53.758 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Left key press detected
+2015-05-17 17:51:53.759 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:53.792 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:53.828 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:53.859 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:53.892 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:53.926 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:53.959 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:53.992 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:54.026 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader hit at x,y : 417.0, 294.0
+2015-05-17 17:51:54.026 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:54.059 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:54.092 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Left key no longer being pressed
+2015-05-17 17:51:54.327 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Left key press detected
+2015-05-17 17:51:54.328 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:54.361 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:54.394 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:54.428 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:54.461 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Left key no longer being pressed
+2015-05-17 17:51:54.461 [LWJGL Application] DEBUG com.dean.spaceclone.gameobjects.Bullet - Bullet created at x,y : 398.0,166.0. Speed is : 4.0
+2015-05-17 17:51:54.462 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to shoot
+2015-05-17 17:51:54.595 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Right key press detected
+2015-05-17 17:51:54.595 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:54.628 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:54.662 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:54.695 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:54.729 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:54.762 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:54.795 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:54.829 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:54.862 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:54.896 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:54.929 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:54.963 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:54.996 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:55.030 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:55.065 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:55.097 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:55.130 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:55.163 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:55.197 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:55.230 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:55.263 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:55.297 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:55.330 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:55.364 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:55.397 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Right key no longer being pressed
+2015-05-17 17:51:55.599 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader hit at x,y : 401.0, 294.0
+2015-05-17 17:51:55.599 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Left key press detected
+2015-05-17 17:51:55.599 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:55.632 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:55.666 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:55.699 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:55.732 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:55.766 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:55.799 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:55.833 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:55.866 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:55.899 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:55.933 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:55.966 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:56.000 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:56.033 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:56.034 [LWJGL Application] DEBUG com.dean.spaceclone.gameobjects.Bullet - Bullet created at x,y : 418.0,166.0. Speed is : 4.0
+2015-05-17 17:51:56.034 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to shoot
+2015-05-17 17:51:56.067 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:56.105 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:56.133 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:56.167 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:56.200 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:56.234 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:56.267 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:56.301 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:56.334 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:56.367 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:56.401 [LWJGL Application] DEBUG com.dean.spaceclone.gameobjects.Bullet - Bullet created at x,y : 340.0,343.0. Speed is : -2.0
+2015-05-17 17:51:56.401 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:56.434 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:56.468 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:56.501 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:56.534 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:56.568 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:56.601 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:56.635 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:56.668 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:56.702 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:56.740 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:56.773 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:56.807 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:56.840 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:56.873 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:56.907 [LWJGL Application] DEBUG com.dean.spaceclone.gameobjects.Bullet - Bullet created at x,y : 311.0,305.0. Speed is : -2.0
+2015-05-17 17:51:56.907 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:56.940 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:56.974 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:57.008 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:57.041 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader hit at x,y : 409.0, 294.0
+2015-05-17 17:51:57.042 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:57.075 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:57.108 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:57.142 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:57.175 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:57.209 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:57.242 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:57.276 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:57.309 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:57.342 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:57.376 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:57.409 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:57.443 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:57.476 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:57.510 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:57.543 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:57.576 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:57.611 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:57.643 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:57.644 [LWJGL Application] DEBUG com.dean.spaceclone.gameobjects.Bullet - Bullet created at x,y : 322.0,166.0. Speed is : 4.0
+2015-05-17 17:51:57.644 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to shoot
+2015-05-17 17:51:57.677 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:57.710 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Right key press detected
+2015-05-17 17:51:57.710 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:57.744 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:57.777 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:57.810 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Left key no longer being pressed
+2015-05-17 17:51:57.811 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:57.844 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:57.877 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:57.911 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:57.944 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:57.978 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:58.011 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:58.044 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:58.078 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:58.112 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:58.147 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:58.178 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:58.212 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:58.245 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:58.279 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:58.312 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:58.345 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:58.379 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:58.413 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:58.447 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:58.480 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:58.514 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:58.547 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:58.580 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:58.614 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:58.647 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:58.681 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:58.714 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:58.748 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:58.781 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader hit at x,y : 317.0, 313.0
+2015-05-17 17:51:58.781 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:58.781 [LWJGL Application] DEBUG com.dean.spaceclone.gameobjects.Bullet - Bullet created at x,y : 374.0,166.0. Speed is : 4.0
+2015-05-17 17:51:58.781 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to shoot
+2015-05-17 17:51:58.814 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:58.848 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:58.881 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:58.914 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:58.948 [LWJGL Application] DEBUG com.dean.spaceclone.gameobjects.Bullet - Bullet created at x,y : 323.0,343.0. Speed is : -2.0
+2015-05-17 17:51:58.948 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:58.981 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:59.015 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:59.049 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:59.082 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invaders just moved down. Increasing speed per sec from 0.22757524 to 0.21006945 per second.
+2015-05-17 17:51:59.082 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:59.115 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:59.149 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:59.182 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:59.216 [LWJGL Application] DEBUG com.dean.spaceclone.gameobjects.Bullet - Bullet created at x,y : 228.0,337.0. Speed is : -2.0
+2015-05-17 17:51:59.216 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:51:59.250 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Left key press detected
+2015-05-17 17:51:59.250 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:59.283 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Right key no longer being pressed
+2015-05-17 17:51:59.283 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:59.316 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:59.350 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:59.383 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:59.416 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:59.451 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:59.484 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:59.517 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:59.551 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:59.584 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:59.617 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:59.652 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:59.685 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:59.685 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader hit at x,y : 360.0, 288.0
+2015-05-17 17:51:59.718 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:59.751 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:59.786 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:59.819 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:59.852 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:59.886 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:59.919 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:59.953 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:51:59.986 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:00.020 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:00.053 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:00.087 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:00.120 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:00.154 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:00.188 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:00.220 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:00.255 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:00.288 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:00.321 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:00.354 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:00.389 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:00.422 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:00.455 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:00.488 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:00.522 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:00.555 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Right key press detected
+2015-05-17 17:52:00.556 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:00.556 [LWJGL Application] DEBUG com.dean.spaceclone.gameobjects.Bullet - Bullet created at x,y : 320.0,166.0. Speed is : 4.0
+2015-05-17 17:52:00.556 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to shoot
+2015-05-17 17:52:00.589 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Left key no longer being pressed
+2015-05-17 17:52:00.589 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:00.624 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:00.656 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:00.689 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:00.724 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:00.757 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:00.790 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:00.823 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:00.857 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:00.891 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:00.924 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:00.957 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:00.991 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:01.025 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:01.058 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:01.092 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:01.125 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:01.159 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:01.192 [LWJGL Application] DEBUG com.dean.spaceclone.gameobjects.Bullet - Bullet created at x,y : 325.0,356.0. Speed is : -2.0
+2015-05-17 17:52:01.192 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:01.226 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:01.260 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:01.293 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:01.327 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:01.359 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:01.393 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:01.426 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:01.460 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:01.460 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader hit at x,y : 305.0, 288.0
+2015-05-17 17:52:01.493 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:01.526 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:01.526 [LWJGL Application] DEBUG com.dean.spaceclone.gameobjects.Bullet - Bullet created at x,y : 378.0,166.0. Speed is : 4.0
+2015-05-17 17:52:01.526 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to shoot
+2015-05-17 17:52:01.561 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:01.594 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Right key no longer being pressed
+2015-05-17 17:52:02.063 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Left key press detected
+2015-05-17 17:52:02.063 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:02.096 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:02.129 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:02.163 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:02.197 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:02.230 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:02.264 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:02.297 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:02.331 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:02.364 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:02.398 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:02.432 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:02.432 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader hit at x,y : 363.0, 288.0
+2015-05-17 17:52:02.465 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:02.498 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:02.532 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:02.566 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:02.599 [LWJGL Application] DEBUG com.dean.spaceclone.gameobjects.Bullet - Bullet created at x,y : 412.0,318.0. Speed is : -2.0
+2015-05-17 17:52:02.599 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:02.632 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:02.666 [LWJGL Application] DEBUG com.dean.spaceclone.gameobjects.Bullet - Bullet created at x,y : 436.0,318.0. Speed is : -2.0
+2015-05-17 17:52:02.667 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:02.699 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:02.733 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Left key no longer being pressed
+2015-05-17 17:52:02.900 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Left key press detected
+2015-05-17 17:52:02.900 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:02.933 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:02.967 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:03.001 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:03.034 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Left key no longer being pressed
+2015-05-17 17:52:03.268 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Left key press detected
+2015-05-17 17:52:03.268 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:03.302 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:03.336 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:03.369 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:03.403 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Left key no longer being pressed
+2015-05-17 17:52:03.437 [LWJGL Application] DEBUG com.dean.spaceclone.gameobjects.Bullet - Bullet created at x,y : 324.0,166.0. Speed is : 4.0
+2015-05-17 17:52:03.437 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to shoot
+2015-05-17 17:52:03.570 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Right key press detected
+2015-05-17 17:52:03.570 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:03.604 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:03.638 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:03.671 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:03.704 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:03.738 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:03.771 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:03.805 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:03.838 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:03.872 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:03.905 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:03.938 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:03.972 [LWJGL Application] DEBUG com.dean.spaceclone.gameobjects.Bullet - Bullet created at x,y : 404.0,356.0. Speed is : -2.0
+2015-05-17 17:52:03.973 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:04.006 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:04.039 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:04.072 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:04.106 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:04.141 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:04.173 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:04.207 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:04.240 [LWJGL Application] DEBUG com.dean.spaceclone.gameobjects.Bullet - Bullet created at x,y : 333.0,356.0. Speed is : -2.0
+2015-05-17 17:52:04.240 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:04.273 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:04.307 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:04.341 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:04.374 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:04.407 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:04.441 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:04.474 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:04.508 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:04.541 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:04.575 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:04.608 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:04.641 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:04.676 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:04.709 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:04.742 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:04.775 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:04.809 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Left key press detected
+2015-05-17 17:52:04.809 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:04.843 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Right key no longer being pressed
+2015-05-17 17:52:04.843 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:04.876 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:04.909 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:04.943 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invaders just moved down. Increasing speed per sec from 0.20861062 to 0.19256365 per second.
+2015-05-17 17:52:04.944 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:04.977 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:05.010 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:05.043 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:05.077 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:05.111 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:05.144 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:05.177 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:05.211 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:05.245 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:05.278 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:05.311 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:05.345 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:05.379 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:05.412 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:05.445 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:05.479 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:05.513 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:05.546 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:05.580 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:05.613 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:05.647 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:05.680 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:05.713 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:05.747 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:05.781 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:05.814 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:05.847 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:05.882 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:05.915 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:05.948 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:05.982 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:06.016 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:06.016 [LWJGL Application] DEBUG com.dean.spaceclone.gameobjects.Bullet - Bullet created at x,y : 324.0,166.0. Speed is : 4.0
+2015-05-17 17:52:06.016 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to shoot
+2015-05-17 17:52:06.048 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Left key no longer being pressed
+2015-05-17 17:52:06.384 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Right key press detected
+2015-05-17 17:52:06.384 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:06.417 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:06.450 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Left key press detected
+2015-05-17 17:52:06.450 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:06.484 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:06.517 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Right key no longer being pressed
+2015-05-17 17:52:06.517 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:06.551 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:06.584 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:06.618 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:06.651 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:06.685 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:06.722 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:06.757 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:06.785 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:06.819 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:06.852 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:06.886 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:06.920 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:06.953 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:06.987 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:07.020 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:07.020 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader hit at x,y : 325.0, 301.0
+2015-05-17 17:52:07.053 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:07.087 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:07.121 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:07.154 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:07.187 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Right key press detected
+2015-05-17 17:52:07.188 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:07.221 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:07.254 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Left key no longer being pressed
+2015-05-17 17:52:07.254 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:07.288 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:07.322 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:07.355 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:07.388 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:07.422 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:07.455 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:07.489 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:07.522 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:07.556 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:07.590 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:07.590 [LWJGL Application] DEBUG com.dean.spaceclone.gameobjects.Bullet - Bullet created at x,y : 302.0,166.0. Speed is : 4.0
+2015-05-17 17:52:07.590 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to shoot
+2015-05-17 17:52:07.623 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Left key press detected
+2015-05-17 17:52:07.623 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Right key no longer being pressed
+2015-05-17 17:52:07.623 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:07.656 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:07.690 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:07.723 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:07.757 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:07.790 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:07.824 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:07.857 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:07.891 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:07.924 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:07.957 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:07.990 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:08.025 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:08.058 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:08.091 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:08.125 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:08.159 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:08.192 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:08.225 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:08.259 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:08.293 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:08.326 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Right key press detected
+2015-05-17 17:52:08.326 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:08.359 [LWJGL Application] DEBUG com.dean.spaceclone.gameobjects.Bullet - Bullet created at x,y : 344.0,331.0. Speed is : -2.0
+2015-05-17 17:52:08.359 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:08.392 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move left
+2015-05-17 17:52:08.427 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Left key no longer being pressed
+2015-05-17 17:52:08.427 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:08.460 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:08.493 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:08.527 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:08.561 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:08.561 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader hit at x,y : 304.0, 282.0
+2015-05-17 17:52:08.594 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:08.628 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:08.661 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:08.694 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:08.728 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:08.762 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:08.795 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:08.828 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:08.862 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:08.862 [LWJGL Application] DEBUG com.dean.spaceclone.gameobjects.Bullet - Bullet created at x,y : 282.0,166.0. Speed is : 4.0
+2015-05-17 17:52:08.862 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to shoot
+2015-05-17 17:52:08.896 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:08.929 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:08.963 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:08.996 [LWJGL Application] DEBUG com.dean.spaceclone.gameobjects.Bullet - Bullet created at x,y : 400.0,312.0. Speed is : -2.0
+2015-05-17 17:52:08.996 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:09.029 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:09.063 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:09.097 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:09.130 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:09.163 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:09.197 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:09.231 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:09.265 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:09.298 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:09.331 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:09.364 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:09.398 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Defender trying to move right
+2015-05-17 17:52:09.432 [LWJGL Application] DEBUG com.dean.spaceclone.controls.StandardControls - Right key no longer being pressed
+2015-05-17 17:52:09.868 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invader hit at x,y : 274.0, 301.0
+2015-05-17 17:52:09.968 [LWJGL Application] DEBUG com.dean.spaceclone.SpaceClone - Invaders just moved down. Increasing speed per sec from 0.19122641 to 0.17651668 per second.

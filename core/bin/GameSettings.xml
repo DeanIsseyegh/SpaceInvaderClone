@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<settings> 
-    <defenderBulletSpeed>4</defenderBulletSpeed>
-    <defenderSpeed>2</defenderSpeed>
-    <invaderMovesPerSec>0.25</invaderMovesPerSec>
-</settings>

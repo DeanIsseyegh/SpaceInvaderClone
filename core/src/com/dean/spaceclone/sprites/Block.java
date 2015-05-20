@@ -6,12 +6,21 @@ import com.badlogic.gdx.utils.Array;
 public class Block {
 
 	Array<BlockPart> blockParts;
-	
+
 	public Block(Array<BlockPart> blockParts) {
 		this.blockParts = blockParts;
 	}
-	
-	public boolean destroyPartAt(int x, int y) {
+
+	/**
+	 * Will destroy the particle block part at the given x,y coordinates.
+	 * Returns true if a block part actually exists at those coordinates, and
+	 * false otherwise.
+	 * 
+	 * @param x
+	 * @param y
+	 * @return didBlockGetDestroyed
+	 */
+	public boolean destroyPartAt(float x, float y) {
 		for (int i = 0; i < blockParts.size; i++) {
 			BlockPart part = blockParts.get(i);
 			if (part.getX() == x && part.getY() == y) {
@@ -21,13 +30,85 @@ public class Block {
 		}
 		return false;
 	}
-	
+
+	/**
+	 * Similar to destoryPartAt(float x, float y) method, but will destroy
+	 * multiple parts around the given radius.
+	 * 
+	 * @param x
+	 * @param y
+	 * @param radius
+	 * @return didBlockGetDestroyed
+	 */
+	public boolean destroyPartsAround(float x, float y, float radius) {
+		boolean didDestroyABlock = false;
+		for (int i = 0; i < blockParts.size; i++) {
+			BlockPart part = blockParts.get(i);
+			for (int j = 0; j < (radius * 2); j++) {
+				if (isWithinBounds(i)) {
+					boolean shouldRemove = false;
+					// North
+					if ((part.getX()) == x && ((part.getY()) + j) == y) {
+						shouldRemove = true;
+					}
+
+					// North-east
+					if ((part.getX() + j - 1) == x && ((part.getY()) + j - 1) == y) {
+						shouldRemove = true;
+					}
+
+					// East
+					if ((part.getX() + j) == x && part.getY() == y) {
+						shouldRemove = true;
+					}
+
+					// South-East
+					if ((part.getX() + j - 1) == x && (part.getY() - j + j) == y) {
+						shouldRemove = true;
+					}
+
+					// South
+					if ((part.getX()) == x && (part.getY() - j) == y) {
+						shouldRemove = true;
+					} 
+
+					// South-West
+					if ((part.getX() - j + 1) == x && (part.getY() - j + 1) == y) {
+						shouldRemove = true;
+					}
+
+					// West
+					if ((part.getX() - j) == x && (part.getY()) == y) {
+						shouldRemove = true;
+					}
+
+					// North-West
+					if ((part.getX() - j + 1) == x && (part.getY() + j - 1) == y) {
+						shouldRemove = true;
+					}
+					if (shouldRemove) {
+						blockParts.removeIndex(i);
+						didDestroyABlock = true;
+					}
+				}
+			}
+		}
+		return didDestroyABlock;
+	}
+
+	private boolean isWithinBounds(int i) {
+		if (i < 0 || i >= blockParts.size) {
+			return false;
+		}
+		return true;
+	}
+
 	public void render(SpriteBatch batch) {
 		for (BlockPart part : blockParts) {
 			part.draw(batch);
 		}
 	}
-	
+
 	public Array<BlockPart> getBlockParts() {
 		return blockParts;
 	}

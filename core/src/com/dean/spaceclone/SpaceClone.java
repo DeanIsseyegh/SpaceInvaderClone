@@ -197,6 +197,26 @@ public class SpaceClone extends ApplicationAdapter {
 				System.exit(1);
 			}
 		}
+
+		// Check bullets hitting blocks
+		if (this.invaderBullets.size > 0) {
+			for (Block block : blocks) {
+				if (block.getBlockParts().size > 0) {
+					// loop of invader BULLETS BRAH
+					Iterator<Bullet> iterator = invaderBullets.iterator();
+					while (iterator.hasNext()) {
+						Bullet bullet = iterator.next();
+						int indexOfHitBlock = collisionDetection.indexOfSpriteThatCollided(block.getBlockParts(), bullet);
+						if (indexOfHitBlock >= 0) {
+							BlockPart hitBlockPart = block.getBlockParts().get(indexOfHitBlock);
+							float shotRadius = 2;
+							block.destroyPartsAround(hitBlockPart.getX(), hitBlockPart.getY(), shotRadius);
+							invaderBullets.removeValue(bullet, true);
+						}
+					}
+				}
+			}
+		}
 	}
 
 	private void updateBullets() {
@@ -352,25 +372,25 @@ public class SpaceClone extends ApplicationAdapter {
 	private void setupBlocks() {
 		blocks = new Array<>();
 		RedImage blockImage = new RedImage(GameTextures.BLOCK_IMAGE);
-		blockImage.flipCoordinates();
+		blockImage.flipCoordinatesY();
 		int numOfBlocks = 4;
 
-		float startXPos = leftBoundary + blockImage.getImg().getWidth()/2;
+		float startXPos = leftBoundary + blockImage.getImg().getWidth() / 2;
 		logger.debug("Starting x block pos : " + startXPos);
 		float startYPos = invaderFloorBoundary;
 		logger.debug("Starting y block pos : " + startYPos);
-		float gapBetweenBlocks = ((rightBoundary - leftBoundary)/numOfBlocks - blockImage.getImg().getWidth()/2/numOfBlocks);
+		float gapBetweenBlocks = ((rightBoundary - leftBoundary) / numOfBlocks - blockImage.getImg().getWidth() / 2 / numOfBlocks);
 		logger.debug("Gap between blocks : " + gapBetweenBlocks);
 
 		for (int i = 0; i < numOfBlocks; i++) {
 			Array<BlockPart> blockParts = new Array<>();
 			Array<Coordinate> coordinates = blockImage.getCoordinatesWithOffset(startXPos, startYPos);
-			
+
 			for (Coordinate coordinate : coordinates) {
 				BlockPart blockPart = new BlockPart(GameTextures.BLOCK_PART_TEXTURE, (float) coordinate.getX(), (float) coordinate.getY());
 				blockParts.add(blockPart);
 			}
-	
+
 			Block block = new Block(blockParts);
 			blocks.add(block);
 			startXPos += gapBetweenBlocks;

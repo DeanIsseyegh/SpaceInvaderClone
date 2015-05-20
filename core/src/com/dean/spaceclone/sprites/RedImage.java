@@ -15,7 +15,9 @@ import com.dean.receiptmaker.model.Pixel;
  * coordinates. These coordinates can later be used to draw the picture.
  * 
  * Please note that it will read the image from the top left corner downwards.
- * If you would like to flip the coordinates, simply call the flipCoordinates() method.
+ * That means the top left corner of the picture will return coordinates (0,0).
+ * If you would like to flip the coordinates, simply call the flipCoordinates()
+ * method.
  * 
  * @author Dean
  *
@@ -48,11 +50,39 @@ public class RedImage {
 			}
 		}
 	}
-	
+
+	/**
+	 * Will invert the coordinates. If the top left corner was (0,0), now it the
+	 * bottom right corner is (0,0).
+	 */
 	public void flipCoordinates() {
 		Array<Coordinate> flippedCoordinates = new Array<>();
 		for (Coordinate coordinate : coordinates) {
 			Coordinate flippedCoordinate = new Coordinate(img.getWidth() - coordinate.getX(), img.getHeight() - coordinate.getY());
+			flippedCoordinates.add(flippedCoordinate);
+		}
+		coordinates = flippedCoordinates;
+	}
+
+	/**
+	 * Will only invert the Y coordinates.
+	 */
+	public void flipCoordinatesY() {
+		Array<Coordinate> flippedCoordinates = new Array<>();
+		for (Coordinate coordinate : coordinates) {
+			Coordinate flippedCoordinate = new Coordinate(coordinate.getX(), img.getHeight() - coordinate.getY());
+			flippedCoordinates.add(flippedCoordinate);
+		}
+		coordinates = flippedCoordinates;
+	}
+
+	/**
+	 * Will only invert the X coordinates.
+	 */
+	public void flipCoordinatesX() {
+		Array<Coordinate> flippedCoordinates = new Array<>();
+		for (Coordinate coordinate : coordinates) {
+			Coordinate flippedCoordinate = new Coordinate(img.getWidth() - coordinate.getX(), coordinate.getY());
 			flippedCoordinates.add(flippedCoordinate);
 		}
 		coordinates = flippedCoordinates;

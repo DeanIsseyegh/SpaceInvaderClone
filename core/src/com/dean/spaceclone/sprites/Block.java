@@ -40,11 +40,11 @@ public class Block {
 	 * @param radius
 	 * @return didBlockGetDestroyed
 	 */
-	public boolean destroyPartsAround(float x, float y, float radius) {
+	public boolean destroyPartsAround(int x, int y, int radius) {
 		boolean didDestroyABlock = false;
 		for (int i = 0; i < blockParts.size; i++) {
 			BlockPart part = blockParts.get(i);
-			for (int j = 0; j < (radius * 2); j++) {
+			for (int j = 0; j < radius; j++) {
 				if (isWithinBounds(i)) {
 					boolean shouldRemove = false;
 					// North
@@ -53,7 +53,7 @@ public class Block {
 					}
 
 					// North-east
-					if ((part.getX() + j - 1) == x && ((part.getY()) + j - 1) == y) {
+					if ((part.getX() + j) == x && ((part.getY()) + j) == y) {
 						shouldRemove = true;
 					}
 
@@ -63,7 +63,7 @@ public class Block {
 					}
 
 					// South-East
-					if ((part.getX() + j - 1) == x && (part.getY() - j + j) == y) {
+					if ((part.getX() + j) == x && (part.getY() - j) == y) {
 						shouldRemove = true;
 					}
 
@@ -73,7 +73,7 @@ public class Block {
 					} 
 
 					// South-West
-					if ((part.getX() - j + 1) == x && (part.getY() - j + 1) == y) {
+					if ((part.getX() - j) == x && (part.getY() - j) == y) {
 						shouldRemove = true;
 					}
 
@@ -83,7 +83,7 @@ public class Block {
 					}
 
 					// North-West
-					if ((part.getX() - j + 1) == x && (part.getY() + j - 1) == y) {
+					if ((part.getX() - j) == x && (part.getY() + j) == y) {
 						shouldRemove = true;
 					}
 					if (shouldRemove) {

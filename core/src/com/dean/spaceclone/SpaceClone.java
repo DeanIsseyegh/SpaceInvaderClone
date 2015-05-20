@@ -65,6 +65,9 @@ public class SpaceClone extends ApplicationAdapter {
 	private float invaderBulletSpeed;
 	// End Of Settings that should be configurable //
 
+	// How big of a radius explodes on block.
+	int shotExplosionRadius = 4;
+
 	private ICollisionDetection collisionDetection = new CollisionDetection();
 	private PositionCalculator positionCalc = new PositionCalculator();
 	private Random rand = new Random();
@@ -181,8 +184,6 @@ public class SpaceClone extends ApplicationAdapter {
 		if (this.invaderList.size > 0 && this.defenderBullet != null) {
 			int indexOfHitInvader = collisionDetection.indexOfSpriteThatCollided(invaderList, defenderBullet);
 			if (indexOfHitInvader >= 0) {
-				Invader hitInvader = invaderList.get(indexOfHitInvader);
-				logger.debug("Invader hit at x,y : " + hitInvader.getX() + ", " + hitInvader.getY());
 				invaderList.removeIndex(indexOfHitInvader);
 				defenderBullet = null;
 			}
@@ -209,13 +210,24 @@ public class SpaceClone extends ApplicationAdapter {
 						int indexOfHitBlock = collisionDetection.indexOfSpriteThatCollided(block.getBlockParts(), bullet);
 						if (indexOfHitBlock >= 0) {
 							BlockPart hitBlockPart = block.getBlockParts().get(indexOfHitBlock);
-							float shotRadius = 2;
-							block.destroyPartsAround(hitBlockPart.getX(), hitBlockPart.getY(), shotRadius);
+							block.destroyPartsAround((int) hitBlockPart.getX(), (int) hitBlockPart.getY(), shotExplosionRadius);
 							invaderBullets.removeValue(bullet, true);
 						}
 					}
 				}
 			}
+		}
+
+		// Check for defender bullet hitting invader
+		for (Block block : blocks) {
+			if (this.defenderBullet != null && this.blocks.size > 0) {
+				int indexOfHitBlock = collisionDetection.indexOfSpriteThatCollided(block.getBlockParts(), defenderBullet);
+				if (indexOfHitBlock >= 0) {
+					BlockPart blockPart = block.getBlockParts().get(indexOfHitBlock);
+					block.destroyPartsAround((int) blockPart.getX(), (int) blockPart.getY(), shotExplosionRadius);
+					defenderBullet = null;
+				}
+			} 
 		}
 	}
 
